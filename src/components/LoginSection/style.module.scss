@@ -1,0 +1,40 @@
+.loginSection{
+  display: flex;
+  gap: 10px;
+  .loginButton{
+    height: 40px;
+    width: auto;
+    padding: 10px 21px;
+    background-color: #f40000;
+    border-radius: 32px;
+    color: white;
+    size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .profileButton{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1D1E1C;
+  }
+  .profileButtonActive{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f40000;
+    padding: 0;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #fff;
+      background-color: #009639;
+      border-radius: 50%;
+      top: -2px;
+      right: -2px;
+    }
+  }
+}

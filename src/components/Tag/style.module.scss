@@ -1,0 +1,27 @@
+.tag, .tagActive{
+  height: 36px;
+  background-color: white;
+  border: 1.5px solid #ECEEEF;
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  cursor: pointer;
+  .tagName{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D1E1C;
+    width: max-content;
+  }
+  .tagImage{
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+  }
+}
+.tagActive{
+  border-color: #F40000;
+}
