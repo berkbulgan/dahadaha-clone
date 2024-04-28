@@ -14,7 +14,7 @@ const CampaignDetails = () => {
 
   return (
     <div className={classes.detailPage}>
-      {loading && <><Skeleton height={350}/><div style={{paddingRight: 16, paddingLeft: 16}}><Skeleton height={30} style={{margin: 12}}/><Skeleton height={12} count={12}/></div></>}
+      {loading && <><Skeleton height={350}/><div style={{paddingRight: 16, paddingLeft: 16}}><Skeleton height={30} style={{marginTop: 12, marginBottom: 12}}/><Skeleton height={12} count={12}/></div></>}
       {error && <div>{error}</div>}
       {promotionDetail && (
         <>
