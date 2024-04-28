@@ -5,6 +5,8 @@ import formatDate from "../../utils/formatDate";
 import removeTags from "../../utils/removeTags";
 import BackSVG from "./back.svg";
 
+import Skeleton from "react-loading-skeleton";
+
 const CampaignDetails = () => {
   const { id } = useParams<{ seoName: string; id: string }>();
 
@@ -12,7 +14,7 @@ const CampaignDetails = () => {
 
   return (
     <div className={classes.detailPage}>
-      {loading && <div>Loading...</div>}
+      {loading && <><Skeleton height={350}/><div style={{paddingRight: 16, paddingLeft: 16}}><Skeleton height={30} style={{margin: 12}}/><Skeleton height={12} count={12}/></div></>}
       {error && <div>{error}</div>}
       {promotionDetail && (
         <>

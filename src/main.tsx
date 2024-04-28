@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import CampaignDetails from './pages/Detail';
 
+import 'react-loading-skeleton/dist/skeleton.css'
 import "./style.scss";
 
 const router = createBrowserRouter([

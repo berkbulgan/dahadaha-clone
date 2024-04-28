@@ -3,6 +3,7 @@ import { Pagination, EffectCoverflow } from "swiper/modules";
 import usePromotions from "../../hooks/usePromotions";
 import classes from "./style.module.scss";
 import PromotionCard from "../PromotionCard";
+import Skeleton from "react-loading-skeleton";
 
 const PromotionCarousel = () => {
   const { loading, error, promotions } = usePromotions();
@@ -27,7 +28,7 @@ const PromotionCarousel = () => {
       }}
       modules={[Pagination, EffectCoverflow]}
     >
-      {loading && <div>Loading...</div>}
+      {loading && <SwiperSlide><Skeleton height={400}/><Skeleton count={3} height={20}/></SwiperSlide>}
       {error && <div>{error}</div>}
       {!error &&
         promotions &&

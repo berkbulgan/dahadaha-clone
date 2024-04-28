@@ -2,6 +2,7 @@ import useTags from "../../hooks/useTags";
 import Tag from "../Tag";
 import classes from "./style.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Skeleton from "react-loading-skeleton";
 
 const TagsCarousel = () => {
   const { loading, error, tags } = useTags();
@@ -12,7 +13,7 @@ const TagsCarousel = () => {
       slidesPerView="auto"
       spaceBetween={5}
     >
-      {loading && <div>Loading...</div>}
+      {loading && <SwiperSlide style={{width: 'max-content'}}><Skeleton height={36} width={90} count={5} inline={true} style={{marginRight: 5}}/></SwiperSlide>}
       {error && <div>{error}</div>}
       {!error &&
         tags &&
