@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./style.module.scss";
-import Logo from "./logo.png";
+import Logo from "../../assets/Images/logo.png";
 import LoginSection from "../../components/LoginSection";
 
 

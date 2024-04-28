@@ -1,7 +1,7 @@
 import classes from "./style.module.scss";
-import PortalSVG from "./portal.svg";
-import DiscoverSVG from "./discover.svg";
-import WalletSVG from "./wallet.svg";
+import PortalSVG from "../../assets/Images/portal.svg";
+import DiscoverSVG from "../../assets/Images/discover.svg";
+import WalletSVG from "../../assets/Images/wallet.svg";
 
 const Footer = () => {
   return (

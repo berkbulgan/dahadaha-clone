@@ -3,7 +3,7 @@ import classes from "./style.module.scss";
 import usePromotion from "../../hooks/usePromotion";
 import formatDate from "../../utils/formatDate";
 import removeTags from "../../utils/removeTags";
-import BackSVG from "./back.svg";
+import BackSVG from "../../assets/Images/back.svg";
 
 import Skeleton from "react-loading-skeleton";
 

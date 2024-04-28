@@ -1,5 +1,5 @@
 import classes from "./style.module.scss";
-import Profile from "./profile.png";
+import Profile from "../../assets/Images/profile.png";
 import useAppStore from "../../context/appContext";
 
 const LoginSection = () => {
