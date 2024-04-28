@@ -5,11 +5,6 @@ interface AppStore {
   toggleSignedIn: () => void;
   tagFilter: string;
   setTagFilter: (tag: string) => void;
-  promotionIDs: {
-    id: number;
-    type: string[];
-  }[];
-  pushPromotionID: (id: number, type: string[]) => void;
 }
 
 const useAppStore = create<AppStore>()((set) => ({
@@ -17,8 +12,6 @@ const useAppStore = create<AppStore>()((set) => ({
   toggleSignedIn: () => set((state) => ({ signedIn: !state.signedIn })),
   tagFilter: '',
   setTagFilter: (tag: string) => set({ tagFilter: tag }),
-  promotionIDs: [],
-  pushPromotionID: (id: number, type: string[]) => set((state) => ({ promotionIDs: [...state.promotionIDs, { id, type }] })),
 }));  
 
 export default useAppStore;
